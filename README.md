@@ -89,24 +89,24 @@ Results on Validation set for Single Shot Multi Box Detector
 
 Succesful Cases
 <p float="left">
-<img src="/images/val_3.png" width="23%" />
-<img src="/images/val_5.png" width="23%" />
-<img src="/images/val_6.png" width="23%" />
-<img src="/images/vali_10.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_3.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_5.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_6.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_10.png" width="40%" />
 </p>
 
 <p float="left">
-<img src="/images/val_ssd300_aug/val_11.png" width="23%" />
-<img src="/images/val_ssd300_aug/val_13.png" width="23%" />
-<img src="/images/val_ssd300_aug/val_14.png" width="23%" />
-<img src="/images/val_ssd300_aug/val_19.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_11.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_13.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_14.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_19.png" width="40%" />
 </p>
 
 
 Failure Cases
 <p float="left">
-<img src="/images/val_ssd300_aug/val_17.png" width="23%" />
-<img src="/images/val_ssd300_aug/val_15.png" width="23%" />
-<img src="/images/val_ssd300_aug/val_27.png" width="23%" />
-<img src="/images/val_ssd300_aug/val_89.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_17.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_15.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_27.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_89.png" width="40%" />
 </p>
