@@ -81,7 +81,6 @@ Code is available for both Faster R-CNN and SSD. But I used SSD for the task of 
 All the results and models can be downloaded from [here](https://drive.google.com/file/d/1Fb9XrDYKtzJiysEi79dC_NZlsrgUr-9o/view?usp=sharing).
 No pretrained models were used. Everything is trained from scratch.
 
-The presentations can be downloaded from [here](https://drive.google.com/file/d/1C2l-P5fKZWgDAObaIJ25ryeBtg5YgRug/view?usp=sharing).
 
 
 ## 4. Results
@@ -97,17 +96,17 @@ Succesful Cases
 </p>
 
 <p float="left">
-<img src="/images/val_11.png" width="23%" />
-<img src="/images/val_13.png" width="23%" />
-<img src="/images/val_14.png" width="23%" />
-<img src="/images/vali_19.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_11.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_13.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_14.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_19.png" width="23%" />
 </p>
 
 
 Failure Cases
 <p float="left">
-<img src="/images/val_17.png" width="23%" />
-<img src="/images/val_15.png" width="23%" />
-<img src="/images/val_27.png" width="23%" />
-<img src="/images/vali_89.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_17.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_15.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_27.png" width="23%" />
+<img src="/images/val_ssd300_aug/val_89.png" width="23%" />
 </p>
