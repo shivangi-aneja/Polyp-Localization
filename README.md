@@ -82,3 +82,32 @@ All the results and models can be downloaded from [here](https://drive.google.co
 No pretrained models were used. Everything is trained from scratch.
 
 The presentations can be downloaded from [here](https://drive.google.com/file/d/1C2l-P5fKZWgDAObaIJ25ryeBtg5YgRug/view?usp=sharing).
+
+
+## 4. Results
+
+Results on Validation set for Single Shot Multi Box Detector
+
+Succesful Cases
+<p float="left">
+<img src="/images/val_3.png" width="23%" />
+<img src="/images/val_5.png" width="23%" />
+<img src="/images/val_6.png" width="23%" />
+<img src="/images/vali_10.png" width="23%" />
+</p>
+
+<p float="left">
+<img src="/images/val_11.png" width="23%" />
+<img src="/images/val_13.png" width="23%" />
+<img src="/images/val_14.png" width="23%" />
+<img src="/images/vali_19.png" width="23%" />
+</p>
+
+
+Failure Cases
+<p float="left">
+<img src="/images/val_17.png" width="23%" />
+<img src="/images/val_15.png" width="23%" />
+<img src="/images/val_27.png" width="23%" />
+<img src="/images/vali_89.png" width="23%" />
+</p>
