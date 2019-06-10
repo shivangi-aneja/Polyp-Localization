@@ -39,10 +39,10 @@ Lambda = keras.layers.Lambda
 l2 = keras.regularizers.l2
 import numpy as np
 
-from ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
-from ssd_keras.keras_layers.keras_layer_L2Normalization import L2Normalization
-from ssd_keras.keras_layers.keras_layer_DecodeDetections import DecodeDetections
-from ssd_keras.keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
+from keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
+from keras_layers.keras_layer_L2Normalization import L2Normalization
+from keras_layers.keras_layer_DecodeDetections import DecodeDetections
+from keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
 
 
 def ssd_512(image_size,

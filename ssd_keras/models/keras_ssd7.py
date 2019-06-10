@@ -41,9 +41,9 @@ K = keras.backend
 Lambda = keras.layers.Lambda
 l2 = keras.regularizers.l2
 
-from ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
-from ssd_keras.keras_layers.keras_layer_DecodeDetections import DecodeDetections
-from ssd_keras.keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
+from keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
+from keras_layers.keras_layer_DecodeDetections import DecodeDetections
+from keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
 
 
 def build_model(image_size,
