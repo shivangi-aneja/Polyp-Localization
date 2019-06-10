@@ -26,7 +26,7 @@ K = keras.backend
 InputSpec = keras.layers.InputSpec
 Layer = keras.layers.Layer
 
-from localization.ssd_keras.bounding_box_utils.bounding_box_utils import convert_coordinates
+from ssd_keras.bounding_box_utils.bounding_box_utils import convert_coordinates
 
 
 class AnchorBoxes(Layer):
@@ -153,7 +153,7 @@ class AnchorBoxes(Layer):
         Arguments:
             x (tensor): 4D tensor of shape `(batch, channels, height, width)` if `dim_ordering = 'th'`
                 or `(batch, height, width, channels)` if `dim_ordering = 'tf'`. The input for this
-                layer must be the output of the localization predictor layer.
+                layer must be the output of the predictor layer.
         '''
 
         # Compute box width and height for each aspect ratio

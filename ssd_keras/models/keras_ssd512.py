@@ -39,10 +39,10 @@ Lambda = keras.layers.Lambda
 l2 = keras.regularizers.l2
 import numpy as np
 
-from localization.ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
-from localization.ssd_keras.keras_layers.keras_layer_L2Normalization import L2Normalization
-from localization.ssd_keras.keras_layers.keras_layer_DecodeDetections import DecodeDetections
-from localization.ssd_keras.keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
+from ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
+from ssd_keras.keras_layers.keras_layer_L2Normalization import L2Normalization
+from ssd_keras.keras_layers.keras_layer_DecodeDetections import DecodeDetections
+from ssd_keras.keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
 
 
 def ssd_512(image_size,
@@ -392,8 +392,8 @@ def ssd_512(image_size,
                                kernel_regularizer=l2(l2_reg), name='conv9_2_mbox_conf')(conv9_2)
     conv10_2_mbox_conf = Conv2D(n_boxes[6] * n_classes, (3, 3), padding='same', kernel_initializer='he_normal',
                                 kernel_regularizer=l2(l2_reg), name='conv10_2_mbox_conf')(conv10_2)
-    # We predict 4 box coordinates for each box, hence the localization predictors have depth `n_boxes * 4`
-    # Output shape of the localization layers: `(batch, height, width, n_boxes * 4)`
+    # We predict 4 box coordinates for each box, hence the predictors have depth `n_boxes * 4`
+    # Output shape of the layers: `(batch, height, width, n_boxes * 4)`
     conv4_3_norm_mbox_loc = Conv2D(n_boxes[0] * 4, (3, 3), padding='same', kernel_initializer='he_normal',
                                    kernel_regularizer=l2(l2_reg), name='conv4_3_norm_mbox_loc')(conv4_3_norm)
     fc7_mbox_loc = Conv2D(n_boxes[1] * 4, (3, 3), padding='same', kernel_initializer='he_normal',

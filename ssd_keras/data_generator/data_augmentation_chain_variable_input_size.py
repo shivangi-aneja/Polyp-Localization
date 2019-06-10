@@ -20,12 +20,12 @@ limitations under the License.
 
 from __future__ import division
 
-from localization.ssd_keras.data_generator.object_detection_2d_geometric_ops import Resize, RandomFlip
-from localization.ssd_keras.data_generator.object_detection_2d_image_boxes_validation_utils import BoxFilter, \
+from ssd_keras.data_generator.object_detection_2d_geometric_ops import Resize, RandomFlip
+from ssd_keras.data_generator.object_detection_2d_image_boxes_validation_utils import BoxFilter, \
     ImageValidator
-from localization.ssd_keras.data_generator.object_detection_2d_patch_sampling_ops import PatchCoordinateGenerator, \
+from ssd_keras.data_generator.object_detection_2d_patch_sampling_ops import PatchCoordinateGenerator, \
     RandomPatch
-from localization.ssd_keras.data_generator.object_detection_2d_photometric_ops import ConvertColor, ConvertDataType, \
+from ssd_keras.data_generator.object_detection_2d_photometric_ops import ConvertColor, ConvertDataType, \
     ConvertTo3Channels, RandomBrightness, RandomContrast, RandomHue, RandomSaturation
 
 

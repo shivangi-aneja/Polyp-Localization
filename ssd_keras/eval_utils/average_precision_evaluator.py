@@ -26,13 +26,13 @@ from math import ceil
 import numpy as np
 from tqdm import trange
 
-from localization.ssd_keras.bounding_box_utils.bounding_box_utils import iou
-from localization.ssd_keras.data_generator.object_detection_2d_data_generator import DataGenerator
-from localization.ssd_keras.data_generator.object_detection_2d_geometric_ops import Resize
-from localization.ssd_keras.data_generator.object_detection_2d_misc_utils import apply_inverse_transforms
-from localization.ssd_keras.data_generator.object_detection_2d_patch_sampling_ops import RandomPadFixedAR
-from localization.ssd_keras.data_generator.object_detection_2d_photometric_ops import ConvertTo3Channels
-from localization.ssd_keras.ssd_encoder_decoder.ssd_output_decoder import decode_detections
+from ssd_keras.bounding_box_utils.bounding_box_utils import iou
+from ssd_keras.data_generator.object_detection_2d_data_generator import DataGenerator
+from ssd_keras.data_generator.object_detection_2d_geometric_ops import Resize
+from ssd_keras.data_generator.object_detection_2d_misc_utils import apply_inverse_transforms
+from ssd_keras.data_generator.object_detection_2d_patch_sampling_ops import RandomPadFixedAR
+from ssd_keras.data_generator.object_detection_2d_photometric_ops import ConvertTo3Channels
+from ssd_keras.ssd_encoder_decoder.ssd_output_decoder import decode_detections
 
 confidence_threshold = 0.5
 

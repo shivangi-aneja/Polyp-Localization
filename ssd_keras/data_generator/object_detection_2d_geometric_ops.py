@@ -24,7 +24,7 @@ import random
 import cv2
 import numpy as np
 
-from localization.ssd_keras.data_generator.object_detection_2d_image_boxes_validation_utils import BoxFilter, \
+from ssd_keras.data_generator.object_detection_2d_image_boxes_validation_utils import BoxFilter, \
     ImageValidator
 
 

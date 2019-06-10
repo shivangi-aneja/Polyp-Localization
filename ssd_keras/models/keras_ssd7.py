@@ -41,9 +41,9 @@ K = keras.backend
 Lambda = keras.layers.Lambda
 l2 = keras.regularizers.l2
 
-from localization.ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
-from localization.ssd_keras.keras_layers.keras_layer_DecodeDetections import DecodeDetections
-from localization.ssd_keras.keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
+from ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
+from ssd_keras.keras_layers.keras_layer_DecodeDetections import DecodeDetections
+from ssd_keras.keras_layers.keras_layer_DecodeDetectionsFast import DecodeDetectionsFast
 
 
 def build_model(image_size,
@@ -352,7 +352,7 @@ def build_model(image_size,
     # predictor layers on top of the base network by simply following the pattern shown here.
 
     # Build the convolutional predictor layers on top of conv layers 4, 5, 6, and 7.
-    # We build two predictor layers on top of each of these layers: One for class prediction (classification), one for box coordinate prediction (localization)
+    # We build two predictor layers on top of each of these layers: One for class prediction (classification), one for box coordinate prediction (
     # We precidt `n_classes` confidence values for each box, hence the `classes` predictors have depth `n_boxes * n_classes`
     # We predict 4 box coordinates for each box, hence the `boxes` predictors have depth `n_boxes * 4`
     # Output shape of `classes`: `(batch, height, width, n_boxes * n_classes)`

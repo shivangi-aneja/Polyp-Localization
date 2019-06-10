@@ -11,14 +11,14 @@ import os
 from ssd_keras.data_generator.object_detection_2d_data_generator import DataGenerator
 
 # Datasets
-DATASETS = {'polyps_rcnn'}
+DATASETS = {'polyps_hospital'}
 
 # training settings
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter,
                                  description='Create h5py files')
 
 # general
-parser.add_argument('-d', '--dataset', type=str, default='polyps_rcnn',
+parser.add_argument('-d', '--dataset', type=str, default='polyps_hospital',
                     help="dataset, {'" + \
                          "', '".join(sorted(DATASETS)) + \
                          "'}")
@@ -40,9 +40,8 @@ def main(args=args):
     # pylint: disable=line-too-long
 
     # Images
-    train_images_dir = os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/train/"
-    test_images_dir = os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/test/"
-    #
+    images_dir = os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/images/"
+
     # # Ground truth
     train_labels_filename = os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/train.csv"
     val_labels_filename = os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/val.csv"
@@ -53,18 +52,18 @@ def main(args=args):
     test_dataset = DataGenerator(load_images_into_memory=False, hdf5_dataset_path=None)
 
     #
-    train_dataset.parse_csv(images_dir=train_images_dir,
+    train_dataset.parse_csv(images_dir=images_dir,
                             labels_filename=train_labels_filename,
                             input_format=['image_name', 'xmin', 'xmax', 'ymin', 'ymax', 'class_id'],
                             # This is the order of the first six columns in the CSV file that contains the labels for your dataset. If your labels are in XML format, maybe the XML parser will be helpful, check the documentation.
                             include_classes='all')
 
-    val_dataset.parse_csv(images_dir=test_images_dir,
+    val_dataset.parse_csv(images_dir=images_dir,
                           labels_filename=val_labels_filename,
                           input_format=['image_name', 'xmin', 'xmax', 'ymin', 'ymax', 'class_id'],
                           include_classes='all')
 
-    test_dataset.parse_csv(images_dir=test_images_dir,
+    test_dataset.parse_csv(images_dir=images_dir,
                            labels_filename=test_labels_filename,
                            input_format=['image_name', 'xmin', 'xmax', 'ymin', 'ymax', 'class_id'],
                            include_classes='all')
@@ -78,19 +77,19 @@ def main(args=args):
         file_path=os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/polyp_train.h5",
         resize=False,
         variable_image_size=True,
-        verbose=True, images_dir=train_images_dir)
+        verbose=True, images_dir=images_dir)
 
     val_dataset.create_hdf5_dataset(
         file_path=os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/polyp_val.h5",
         resize=False,
         variable_image_size=True,
-        verbose=True, images_dir=train_images_dir)
+        verbose=True, images_dir=images_dir)
 
     test_dataset.create_hdf5_dataset(
         file_path=os.path.abspath(os.path.join(os.getcwd(), '')) + "/data/" + args.dataset + "/polyp_test.h5",
         resize=False,
         variable_image_size=True,
-        verbose=True, images_dir=train_images_dir)
+        verbose=True, images_dir=images_dir)
 
 
 if __name__ == '__main__':
