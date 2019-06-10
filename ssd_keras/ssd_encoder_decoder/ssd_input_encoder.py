@@ -20,8 +20,8 @@ from __future__ import division
 
 import numpy as np
 
-from ssd_keras.bounding_box_utils.bounding_box_utils import iou, convert_coordinates
-from ssd_keras.ssd_encoder_decoder.matching_utils import match_bipartite_greedy, match_multi
+from bounding_box_utils.bounding_box_utils import iou, convert_coordinates
+from ssd_encoder_decoder.matching_utils import match_bipartite_greedy, match_multi
 
 
 class SSDInputEncoder:

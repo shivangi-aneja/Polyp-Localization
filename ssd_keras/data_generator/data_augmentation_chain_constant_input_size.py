@@ -20,11 +20,11 @@ from __future__ import division
 
 import numpy as np
 
-from ssd_keras.data_generator.object_detection_2d_geometric_ops import RandomFlip, RandomTranslate, \
+from data_generator.object_detection_2d_geometric_ops import RandomFlip, RandomTranslate, \
     RandomScale
-from ssd_keras.data_generator.object_detection_2d_image_boxes_validation_utils import BoxFilter, \
+from data_generator.object_detection_2d_image_boxes_validation_utils import BoxFilter, \
     ImageValidator
-from ssd_keras.data_generator.object_detection_2d_photometric_ops import ConvertColor, ConvertDataType, \
+from data_generator.object_detection_2d_photometric_ops import ConvertColor, ConvertDataType, \
     ConvertTo3Channels, RandomBrightness, RandomContrast, RandomHue, RandomSaturation
 
 

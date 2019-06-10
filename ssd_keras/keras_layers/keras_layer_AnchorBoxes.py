@@ -26,7 +26,7 @@ K = keras.backend
 InputSpec = keras.layers.InputSpec
 Layer = keras.layers.Layer
 
-from ssd_keras.bounding_box_utils.bounding_box_utils import convert_coordinates
+from bounding_box_utils.bounding_box_utils import convert_coordinates
 
 
 class AnchorBoxes(Layer):

@@ -20,7 +20,7 @@ from __future__ import division
 
 import numpy as np
 
-from ssd_keras.data_generator.object_detection_2d_image_boxes_validation_utils import BoundGenerator, \
+from data_generator.object_detection_2d_image_boxes_validation_utils import BoundGenerator, \
     BoxFilter, ImageValidator
 
 

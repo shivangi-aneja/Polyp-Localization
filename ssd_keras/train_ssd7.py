@@ -15,8 +15,8 @@ ModelCheckpoint = keras.callbacks.ModelCheckpoint
 EarlyStopping = keras.callbacks.EarlyStopping
 ReduceLROnPlateau = keras.callbacks.ReduceLROnPlateau
 TerminateOnNaN = keras.callbacks.TerminateOnNaN
-from ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
-from ssd_keras.ssd_encoder_decoder.ssd_output_decoder import decode_detections
+from keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
+from ssd_encoder_decoder.ssd_output_decoder import decode_detections
 from math import ceil
 import pprint
 
@@ -28,23 +28,23 @@ from matplotlib import pyplot as plt
 import numpy as np
 import os
 import argparse
-from ssd_keras.misc_utils import config_ssd7 as Config
-from ssd_keras.models.keras_ssd7 import build_model
-from ssd_keras.keras_loss_function.keras_ssd_loss import SSDLoss
-from ssd_keras.ssd_encoder_decoder.ssd_input_encoder import SSDInputEncoder
-from ssd_keras.data_generator.object_detection_2d_data_generator import DataGenerator
-from ssd_keras.data_generator.data_augmentation_chain_constant_input_size import \
+from misc_utils import config_ssd7 as Config
+from models.keras_ssd7 import build_model
+from keras_loss_function.keras_ssd_loss import SSDLoss
+from ssd_encoder_decoder.ssd_input_encoder import SSDInputEncoder
+from data_generator.object_detection_2d_data_generator import DataGenerator
+from data_generator.data_augmentation_chain_constant_input_size import \
     DataAugmentationConstantInputSize
 
 # Datasets
-DATASETS = {'polyps_rcnn'}
+DATASETS = {'polyps_hospital'}
 
 # training settings
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter,
                                  description='Create h5py files')
 
 # general
-parser.add_argument('-d', '--dataset', type=str, default='polyps_rcnn',
+parser.add_argument('-d', '--dataset', type=str, default='polyps_hospital',
                     help="dataset, {'" + \
                          "', '".join(sorted(DATASETS)) + \
                          "'}")

@@ -27,20 +27,20 @@ from matplotlib import pyplot as plt
 import numpy as np
 import os
 import argparse
-from ssd_keras.models.keras_ssd512 import ssd_512
-from ssd_keras.misc_utils import config_ssd512 as Config
-from ssd_keras.keras_loss_function.keras_ssd_loss import SSDLoss
-from ssd_keras.keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
-from ssd_keras.keras_layers.keras_layer_L2Normalization import L2Normalization
+from models.keras_ssd512 import ssd_512
+from misc_utils import config_ssd512 as Config
+from keras_loss_function.keras_ssd_loss import SSDLoss
+from keras_layers.keras_layer_AnchorBoxes import AnchorBoxes
+from keras_layers.keras_layer_L2Normalization import L2Normalization
 
-from ssd_keras.ssd_encoder_decoder.ssd_input_encoder import SSDInputEncoder
-from ssd_keras.ssd_encoder_decoder.ssd_output_decoder import decode_detections
+from ssd_encoder_decoder.ssd_input_encoder import SSDInputEncoder
+from ssd_encoder_decoder.ssd_output_decoder import decode_detections
 
-from ssd_keras.data_generator.object_detection_2d_data_generator import DataGenerator
-from ssd_keras.data_generator.object_detection_2d_geometric_ops import Resize
-from ssd_keras.data_generator.object_detection_2d_photometric_ops import ConvertTo3Channels
-from ssd_keras.data_generator.data_augmentation_chain_original_ssd import SSDDataAugmentation
-from ssd_keras.data_generator.object_detection_2d_misc_utils import apply_inverse_transforms
+from data_generator.object_detection_2d_data_generator import DataGenerator
+from data_generator.object_detection_2d_geometric_ops import Resize
+from data_generator.object_detection_2d_photometric_ops import ConvertTo3Channels
+from data_generator.data_augmentation_chain_original_ssd import SSDDataAugmentation
+from data_generator.object_detection_2d_misc_utils import apply_inverse_transforms
 
 # Datasets
 DATASETS = {'polyps_rcnn'}

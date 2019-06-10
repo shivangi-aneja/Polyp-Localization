@@ -8,7 +8,7 @@
 import argparse
 import os
 
-from ssd_keras.data_generator.object_detection_2d_data_generator import DataGenerator
+from data_generator.object_detection_2d_data_generator import DataGenerator
 
 # Datasets
 DATASETS = {'polyps_hospital'}

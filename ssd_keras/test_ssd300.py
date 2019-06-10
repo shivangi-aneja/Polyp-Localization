@@ -18,7 +18,7 @@ ReduceLROnPlateau = keras.callbacks.ReduceLROnPlateau
 TerminateOnNaN = keras.callbacks.TerminateOnNaN
 load_model = keras.models.load_model
 import argparse
-from ssd_keras.misc_utils import config_ssd300 as Config
+from misc_utils import config_ssd300 as Config
 import matplotlib
 
 matplotlib.use('Agg')
@@ -26,10 +26,10 @@ from matplotlib import pyplot as plt
 import os
 import pprint
 import numpy as np
-from localization.ssd_keras.models.keras_ssd300 import ssd_300
-from localization.ssd_keras.keras_loss_function.keras_ssd_loss import SSDLoss
-from localization.ssd_keras.eval_utils.average_precision_evaluator import Evaluator
-from localization.ssd_keras.data_generator.object_detection_2d_data_generator import DataGenerator
+from localization.models.keras_ssd300 import ssd_300
+from localization.keras_loss_function.keras_ssd_loss import SSDLoss
+from localization.eval_utils.average_precision_evaluator import Evaluator
+from localization.data_generator.object_detection_2d_data_generator import DataGenerator
 
 # Datasets
 DATASETS = {'polyps_rcnn'}
