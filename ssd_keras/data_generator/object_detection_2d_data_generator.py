@@ -1152,7 +1152,7 @@ class DataGenerator:
                 for j in sorted(batch_items_to_remove, reverse=True):
                     # This isn't efficient, but it hopefully shouldn't need to be done often anyway.
                     batch_X.pop(j)
-                    if not batch_filenames.empty():
+                    if batch_filenames is not None:
                         batch_filenames.pop(j)
                     if batch_inverse_transforms: batch_inverse_transforms.pop(j)
                     if not (self.labels is None): batch_y.pop(j)
