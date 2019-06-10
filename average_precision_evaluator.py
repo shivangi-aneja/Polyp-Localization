@@ -14,7 +14,7 @@ import sys
 import numpy as np
 from tqdm import trange
 
-from localization.object_detection.utils.bbox_utils import iou
+from object_detection.utils.bbox_utils import iou
 
 
 class Evaluator:

@@ -18,7 +18,7 @@ ReduceLROnPlateau = keras.callbacks.ReduceLROnPlateau
 TerminateOnNaN = keras.callbacks.TerminateOnNaN
 load_model = keras.models.load_model
 import argparse
-from localization.ssd_keras.misc_utils import config_ssd300 as Config
+from ssd_keras.misc_utils import config_ssd300 as Config
 import matplotlib
 
 matplotlib.use('Agg')
