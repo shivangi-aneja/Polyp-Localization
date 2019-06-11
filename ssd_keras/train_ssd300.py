@@ -55,9 +55,9 @@ parser.add_argument('-d', '--dataset', type=str, default='polyps_hospital',
                     help="dataset, {'" + \
                          "', '".join(sorted(DATASETS)) + \
                          "'}")
-parser.add_argument('-b', '--batch_size', type=int, default=32,
+parser.add_argument('-b', '--batch_size', type=int, default=16,
                     help='input batch size for training')
-parser.add_argument('-e', '--final_epoch', type=int, default=1000,
+parser.add_argument('-e', '--final_epoch', type=int, default=100,
                     help='Number Of Epochs')
 parser.add_argument('-m', '--model_name', type=str, default='default',
                     help="model name to save")
@@ -200,7 +200,7 @@ def main():
     # If you're resuming a previous training, set `initial_epoch` and `final_epoch` accordingly.
     initial_epoch = 16
     final_epoch = args.final_epoch
-    steps_per_epoch = 500
+    steps_per_epoch = 125
 
     # Train/Fit the model
     if args.predict_mode == 'train':
