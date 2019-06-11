@@ -43,18 +43,18 @@ from data_generator.data_augmentation_chain_original_ssd import SSDDataAugmentat
 from data_generator.object_detection_2d_misc_utils import apply_inverse_transforms
 
 # Datasets
-DATASETS = {'polyps_rcnn'}
+DATASETS = {'polyps_hospital'}
 
 # training settings
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter,
                                  description='Create h5py files')
 
 # general
-parser.add_argument('-d', '--dataset', type=str, default='polyps_rcnn',
+parser.add_argument('-d', '--dataset', type=str, default='polyps_hospital',
                     help="dataset, {'" + \
                          "', '".join(sorted(DATASETS)) + \
                          "'}")
-parser.add_argument('-b', '--batch_size', type=int, default=32,
+parser.add_argument('-b', '--batch_size', type=int, default=16,
                     help='input batch size for training')
 parser.add_argument('-e', '--final_epoch', type=int, default=1000,
                     help='Number Of Epochs')
@@ -200,7 +200,7 @@ def main():
     # If you're resuming a previous training, set `initial_epoch` and `final_epoch` accordingly.
     initial_epoch = 0
     final_epoch = args.final_epoch
-    steps_per_epoch = 1000
+    steps_per_epoch = 500
 
     # Train/Fit the model
     if args.predict_mode == 'train':
