@@ -198,7 +198,7 @@ def main():
                  terminate_on_nan, tf_log]
 
     # If you're resuming a previous training, set `initial_epoch` and `final_epoch` accordingly.
-    initial_epoch = 16
+    initial_epoch = 1
     final_epoch = args.final_epoch
     steps_per_epoch = 125
 
