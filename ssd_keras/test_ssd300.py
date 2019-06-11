@@ -26,20 +26,20 @@ from matplotlib import pyplot as plt
 import os
 import pprint
 import numpy as np
-from localization.models.keras_ssd300 import ssd_300
-from localization.keras_loss_function.keras_ssd_loss import SSDLoss
-from localization.eval_utils.average_precision_evaluator import Evaluator
-from localization.data_generator.object_detection_2d_data_generator import DataGenerator
+from models.keras_ssd300 import ssd_300
+from keras_loss_function.keras_ssd_loss import SSDLoss
+from eval_utils.average_precision_evaluator import Evaluator
+from data_generator.object_detection_2d_data_generator import DataGenerator
 
 # Datasets
-DATASETS = {'polyps_rcnn'}
+DATASETS = {'polyps_hospital'}
 
 # training settings
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter,
                                  description='Create h5py files')
 
 # general
-parser.add_argument('-d', '--dataset', type=str, default='polyps_rcnn',
+parser.add_argument('-d', '--dataset', type=str, default='polyps_hospital',
                     help="dataset, {'" + \
                          "', '".join(sorted(DATASETS)) + \
                          "'}")

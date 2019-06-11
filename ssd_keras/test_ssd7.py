@@ -39,7 +39,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFo
                                  description='Create h5py files')
 
 # general
-parser.add_argument('-d', '--dataset', type=str, default='polyps_rcnn',
+parser.add_argument('-d', '--dataset', type=str, default='polyps_hospital',
                     help="dataset, {'" + \
                          "', '".join(sorted(DATASETS)) + \
                          "'}")
