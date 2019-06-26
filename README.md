@@ -23,7 +23,7 @@ To test faster R-CNN, run the file `keras_test_frcnn.py`
 
 To run SSD, migrate to directory SSD-keras, and follow `README.md` for instructions
 
-### How to run main.py / predict_masks.py / keras_train_frcnn.py / keras_test_frcnn.py
+#### How to run main.py / predict_masks.py / keras_train_frcnn.py / keras_test_frcnn.py
 ```bash
 usage: main.py [-h] [-d DATASET] [--data-dirpath DATA_DIRPATH]
                [--n-workers N_WORKERS] [--gpu GPU] [-rs RANDOM_SEED]
@@ -68,7 +68,7 @@ optional arguments:
   -dp DROPOUT, --dropout DROPOUT
                         dropout (default: 0)
 ```
-## Sample Command
+#### Sample Command
 ```bash
 python3 main.py -d polyps -a fcn8s -b 100  -e 20
 ```
@@ -85,28 +85,60 @@ No pretrained models were used. Everything is trained from scratch.
 
 ## 4. Results
 
-Results on Validation set for Single Shot Multi Box Detector
+#### Results on Validation set for Single Shot Multi Box Detector
 
-Succesful Cases
+##### Succesful Cases (Benchmark Dataset CVC Colon)
 <p float="left">
-<img src="/images/val_ssd300_aug/val_3.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_5.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_6.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_10.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_3.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_5.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_6.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_10.png" width="24%" />
 </p>
 
 <p float="left">
-<img src="/images/val_ssd300_aug/val_11.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_13.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_14.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_19.png" width="40%" />
+<img src="/images/val_ssd300_aug/val_11.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_13.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_14.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_19.png" width="24%" />
 </p>
 
 
-Failure Cases
+
+##### Succesful Cases (Hospital Dataset)
 <p float="left">
-<img src="/images/val_ssd300_aug/val_17.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_15.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_27.png" width="40%" />
-<img src="/images/val_ssd300_aug/val_89.png" width="40%" />
+<img src="/images/hospital/h1.png" width="30%" />
+<img src="/images/hospital/h2.png" width="30%" />
+<img src="/images/hospital/h3.png" width="30%" />
+</p>
+
+<p float="left">
+<img src="/images/hospital/h4.png" width="30%" />
+<img src="/images/hospital/h5.png" width="30%" />
+<img src="/images/hospital/h6.png" width="30%" />
+</p>
+
+
+
+
+
+
+#####  Failure Cases (Benchmark Dataset CVC Colon)
+<p float="left">
+<img src="/images/val_ssd300_aug/val_17.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_15.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_27.png" width="24%" />
+<img src="/images/val_ssd300_aug/val_89.png" width="24%" />
+</p>
+
+##### Failure Cases (Hospital Dataset)
+<p float="left">
+<img src="/images/hospital/h1.png" width="30%" />
+<img src="/images/hospital/h2.png" width="30%" />
+<img src="/images/hospital/h3.png" width="30%" />
+</p>
+
+<p float="left">
+<img src="/images/hospital/h4.png" width="30%" />
+<img src="/images/hospital/h5.png" width="30%" />
+<img src="/images/hospital/h6.png" width="30%" />
 </p>
