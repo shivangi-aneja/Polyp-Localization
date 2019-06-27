@@ -89,17 +89,15 @@ No pretrained models were used. Everything is trained from scratch.
 
 ##### Succesful Cases (Benchmark Dataset CVC Colon)
 <p float="left">
-<img src="/images/val_ssd300_aug/val_3.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_5.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_6.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_10.png" width="24%" />
+<img src="/images/cvc/8.png" width="30%" />
+<img src="/images/cvc/2.png" width="30%" />
+<img src="/images/cvc/3.png" width="30%" />
 </p>
 
 <p float="left">
-<img src="/images/val_ssd300_aug/val_11.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_13.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_14.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_19.png" width="24%" />
+<img src="/images/cvc/4.png" width="30%" />
+<img src="/images/cvc/5.png" width="30%" />
+<img src="/images/cvc/111.png" width="30%" />
 </p>
 
 
@@ -124,12 +122,16 @@ No pretrained models were used. Everything is trained from scratch.
 
 #####  Failure Cases (Benchmark Dataset CVC Colon)
 <p float="left">
-<img src="/images/val_ssd300_aug/val_17.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_15.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_27.png" width="24%" />
-<img src="/images/val_ssd300_aug/val_89.png" width="24%" />
+<img src="/images/cvc/e4.png" width="30%" />
+<img src="/images/cvc/112.png" width="30%" />
+<img src="/images/cvc/113.png" width="30%" />
 </p>
 
+<p float="left">
+<img src="/images/cvc/e4.png" width="30%" />
+<img src="/images/cvc/e5.png" width="30%" />
+<img src="/images/cvc/e6.png" width="30%" />
+</p>
 ##### Failure Cases (Hospital Dataset)
 <p float="left">
 <img src="/images/hospital/h1.png" width="30%" />
