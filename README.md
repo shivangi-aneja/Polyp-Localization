@@ -132,6 +132,7 @@ No pretrained models were used. Everything is trained from scratch.
 <img src="/images/cvc/e5.png" width="30%" />
 <img src="/images/cvc/e6.png" width="30%" />
 </p>
+
 ##### Failure Cases (Hospital Dataset)
 <p float="left">
 <img src="/images/hospital/h1.png" width="30%" />
