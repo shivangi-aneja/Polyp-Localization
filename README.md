@@ -9,7 +9,7 @@ For our localization and detection task, we used ColonCVC dataset and ETIS-Larib
 
 ## 1. Polyp Localization
 
-The task here is to train Fully Convolutional Network (FCN-8s)  to create segmentation masks for the polyps.
+The task here is to train Fully Convolutional Network (FCN-8s)  to create segmentation masks for the polyps and then draw a bounding box around it.
 To train FCN-8s, run `main.py`.
 To evaluate/test the models, run `predict_masks.py`
 
