@@ -25,7 +25,7 @@ To test faster R-CNN, run the file `keras_test_frcnn.py`
 To run SSD, migrate to directory SSD-keras, and follow `README.md` for instructions
 
 #### How to run main.py / predict_masks.py / keras_train_frcnn.py / keras_test_frcnn.py
-```bash
+```
 usage: main.py [-h] [-d DATASET] [--data-dirpath DATA_DIRPATH]
                [--n-workers N_WORKERS] [--gpu GPU] [-rs RANDOM_SEED]
                [-a ARCHITECTURE] [-l LOSS] [-b BATCH_SIZE]
@@ -70,7 +70,7 @@ optional arguments:
                         dropout (default: 0)
 ```
 #### Sample Command
-```bash
+```
 python3 main.py -d polyps -a fcn8s -b 100  -e 20
 ```
 
