@@ -1,7 +1,8 @@
 For setting up environment, please read `SETUP.md`
 
 # Polyp Localization and Detection
-Polyp localization Using Fully Convolutional Networks
+
+This work was presented during EEML Summer School, 2019. Find the attached poster [here](https://www.academia.edu/40947680/Polyp_Localization_In_Colonscopy_Videos).
 
 For our localization and detection task, we used ColonCVC dataset and ETIS-Larib dataset.
 
