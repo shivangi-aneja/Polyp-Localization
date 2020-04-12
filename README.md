@@ -102,20 +102,19 @@ No pretrained models were used. Everything is trained from scratch.
 </p>
 
 
-
+<!--
 ##### Succesful Cases (Hospital Dataset)
 <p float="left">
 <img src="/images/hospital/h1.png" width="30%" />
 <img src="/images/hospital/h2.png" width="30%" />
 <img src="/images/hospital/h3.png" width="30%" />
 </p>
-
 <p float="left">
 <img src="/images/hospital/h4.png" width="30%" />
 <img src="/images/hospital/h5.png" width="30%" />
 <img src="/images/hospital/h6.png" width="30%" />
 </p>
-
+-->
 
 
 
@@ -134,15 +133,16 @@ No pretrained models were used. Everything is trained from scratch.
 <img src="/images/cvc/e6.png" width="30%" />
 </p>
 
+<!--
 ##### Failure Cases (Hospital Dataset)
 <p float="left">
 <img src="/images/hospital/h1.png" width="30%" />
 <img src="/images/hospital/h2.png" width="30%" />
 <img src="/images/hospital/h3.png" width="30%" />
 </p>
-
 <p float="left">
 <img src="/images/hospital/h4.png" width="30%" />
 <img src="/images/hospital/h5.png" width="30%" />
 <img src="/images/hospital/h6.png" width="30%" />
 </p>
+-->
